@@ -3,27 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SagWas - Support</title>
+    <title>SagWas – Support</title>
+    <meta name="description" content="Support, Hilfe und häufige Fragen zur iPad-App SagWas.">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
+            padding: 40px 20px;
+            color: #1a1a1a;
         }
         .card {
             background: white;
             border-radius: 20px;
             padding: 48px;
-            max-width: 600px;
-            width: 100%;
+            max-width: 760px;
+            margin: 0 auto;
             box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-            text-align: center;
         }
+        header { text-align: center; margin-bottom: 40px; }
         .icon {
             width: 80px;
             height: 80px;
@@ -32,86 +31,183 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 24px;
+            margin-bottom: 16px;
         }
         .icon svg { width: 40px; height: 40px; fill: white; }
-        h1 { font-size: 28px; margin-bottom: 8px; color: #1a1a1a; }
-        .subtitle { color: #666; font-size: 16px; margin-bottom: 32px; }
-        .description {
-            color: #444;
-            font-size: 15px;
-            line-height: 1.6;
-            margin-bottom: 32px;
-            text-align: left;
+        h1 { font-size: 30px; margin-bottom: 6px; }
+        .tagline { color: #666; font-size: 16px; }
+        h2 {
+            font-size: 20px;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #f0f0f0;
         }
-        .contact {
+        h3 { font-size: 16px; margin-top: 18px; margin-bottom: 6px; color: #222; }
+        p, li { color: #444; font-size: 15px; line-height: 1.65; }
+        ul { padding-left: 22px; margin-top: 6px; }
+        a { color: #e74c3c; text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; }
+        .contact-box {
             background: #f8f9fa;
             border-radius: 12px;
-            padding: 24px;
-            text-align: left;
+            padding: 20px 24px;
+            margin-top: 14px;
         }
-        .contact h2 { font-size: 18px; margin-bottom: 12px; color: #1a1a1a; }
-        .contact a {
-            color: #e74c3c;
-            text-decoration: none;
-            font-weight: 500;
+        details {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 14px 18px;
+            margin-top: 10px;
         }
-        .contact a:hover { text-decoration: underline; }
-        .contact p { color: #555; font-size: 14px; line-height: 1.8; }
-        .privacy {
-            margin-top: 24px;
-            text-align: left;
+        details summary {
+            cursor: pointer;
+            font-weight: 600;
+            color: #222;
         }
-        .privacy h2 { font-size: 18px; margin-bottom: 12px; color: #1a1a1a; }
-        .privacy p, .privacy ul {
-            color: #555;
-            font-size: 14px;
-            line-height: 1.8;
-        }
-        .privacy ul { padding-left: 20px; margin-top: 8px; }
+        details[open] summary { margin-bottom: 10px; }
         footer {
-            margin-top: 32px;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
             color: #999;
             font-size: 13px;
+        }
+        .lang-note {
+            text-align: center;
+            font-size: 13px;
+            color: #888;
+            margin-top: 6px;
         }
     </style>
 </head>
 <body>
-    <div class="card">
-        <div class="icon">
-            <svg viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3zm0 18c-3.87 0-7-3.13-7-7H3c0 4.72 3.51 8.59 8 9.29V23h2v-1.71c4.49-.7 8-4.57 8-9.29h-2c0 3.87-3.13 7-7 7z"/></svg>
-        </div>
-        <h1>SagWas</h1>
-        <p class="subtitle">Sprach-App für Kinder</p>
+    <main class="card">
+        <header>
+            <div class="icon">
+                <svg viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3zm0 18c-3.87 0-7-3.13-7-7H3c0 4.72 3.51 8.59 8 9.29V23h2v-1.71c4.49-.7 8-4.57 8-9.29h-2c0 3.87-3.13 7-7 7z"/></svg>
+            </div>
+            <h1>SagWas – Support</h1>
+            <p class="tagline">AAC-Kommunikations-App für iPad</p>
+            <p class="lang-note">English support below · Contact: <a href="mailto:simonch@gmx.de">simonch@gmx.de</a></p>
+        </header>
 
-        <div class="description">
-            SagWas ist eine iPad-App, mit der Kinder Sprachnachrichten aufnehmen und abspielen können.
-            Mit bunten Kacheln, Bildern und Symbolen wird Kommunikation spielerisch und einfach.
-        </div>
-
-        <div class="contact">
-            <h2>Support & Kontakt</h2>
+        <section>
+            <h2>Über SagWas</h2>
             <p>
-                Bei Fragen, Problemen oder Feedback:<br>
-                <a href="mailto:simonch@gmx.de">simonch@gmx.de</a>
+                SagWas ist eine Audio- und Kommunikations-App (AAC – Augmentative and Alternative Communication)
+                für das iPad. Aufnahmen, Piktogramme, Fotos und Text-to-Speech lassen sich zu einfachen Sprach-Boards
+                kombinieren. Verfügbar in acht Sprachen (Deutsch, Englisch, Französisch, Spanisch, Türkisch,
+                Ukrainisch, Arabisch, Polnisch).
             </p>
-        </div>
+        </section>
 
-        <div class="privacy">
+        <section>
+            <h2>Erste Schritte</h2>
+            <h3>Button-Modus</h3>
+            <p>Ein großer Sprechknopf füllt den Bildschirm. 3 Sekunden halten startet eine Aufnahme, tippen spielt sie ab. Über den Track-Switcher wechselst du zwischen bis zu 9 Spuren.</p>
+            <h3>TalkPad-Modus</h3>
+            <p>Ein Raster aus Kacheln auf mehreren Seiten. Jede Kachel kann Audio, Video, Foto, ARASAAC-Symbol und einen Text (der vorgelesen werden kann) enthalten. Zum Hinzufügen auf eine Kachel tippen und in den Einstellungen Quick-Record verwenden.</p>
+            <h3>Einstellungen öffnen</h3>
+            <p>Auf das Zahnrad oben rechts tippen. Falls ein PIN gesetzt ist, diesen eingeben. Dort lassen sich Track-Anzahl, Farben, Fotos, Sprachen und TalkPad-Seiten konfigurieren.</p>
+        </section>
+
+        <section>
+            <h2>Häufige Fragen (FAQ)</h2>
+
+            <details>
+                <summary>Wie nehme ich eine neue Sprachnachricht auf?</summary>
+                <p>Im Button-Modus den großen Knopf 3 Sekunden gedrückt halten. Ein Countdown erscheint, dann startet die Aufnahme. Loslassen beendet die Aufnahme. Maximale Länge: 2 Minuten pro Track.</p>
+            </details>
+
+            <details>
+                <summary>Wie teile ich einen Track oder eine Seite?</summary>
+                <p>In den Einstellungen auf „Teilen" tippen. Du erhältst eine 6-stellige Share-ID. Auf dem Zielgerät unter „Empfangen" eingeben – die Inhalte werden über Apple iCloud (CloudKit) synchronisiert. Ohne Internet wird der Upload in eine Warteschlange gelegt und später automatisch ausgeführt.</p>
+            </details>
+
+            <details>
+                <summary>Warum hört sich die Text-to-Speech-Stimme roboterhaft an?</summary>
+                <p>iOS liefert für manche Sprachen nur Kompakt-Stimmen. Unter iOS-Einstellungen → Bedienungshilfen → Gesprochene Inhalte → Stimmen kannst du eine hochwertige Stimme herunterladen. SagWas verwendet diese automatisch.</p>
+            </details>
+
+            <details>
+                <summary>Die Piktogramm-Suche zeigt keine Ergebnisse.</summary>
+                <p>Die Piktogramm-Suche nutzt die ARASAAC-API und benötigt eine Internetverbindung. Prüfe deine Verbindung und versuche andere Suchbegriffe. Im Low-Power-Modus werden Anfragen eingeschränkt.</p>
+            </details>
+
+            <details>
+                <summary>Ich habe mein PIN vergessen.</summary>
+                <p>Deinstalliere die App und installiere sie neu. Achtung: Dabei gehen alle lokalen Aufnahmen verloren. Vorher ggf. Tracks oder Seiten über die Teilen-Funktion sichern.</p>
+            </details>
+
+            <details>
+                <summary>Funktioniert SagWas auch auf dem iPhone?</summary>
+                <p>Ja, SagWas läuft auf iPhone und iPad ab iOS 17. Optimiert ist die App für das iPad (Portrait + Landscape). Auf dem iPhone ist nur Portrait-Modus verfügbar.</p>
+            </details>
+
+            <details>
+                <summary>Wie importiere ich eine Audio-Datei aus der Dateien-App?</summary>
+                <p>In den Einstellungen eines Tracks auf „Audio importieren" tippen, .mp3/.m4a/.wav aus der Dateien-App auswählen und ggf. über den Trim-Editor Start- und Endpunkt festlegen.</p>
+            </details>
+
+            <details>
+                <summary>Warum höre ich keinen Ton?</summary>
+                <p>Prüfe, ob das iPad nicht stumm geschaltet ist (Seitenschalter oder Kontrollzentrum) und die Lautstärke aufgedreht ist. SagWas nutzt das normale Medien-Audio, kein Klingelton-Profil.</p>
+            </details>
+
+            <details>
+                <summary>Welche Daten sammelt die App?</summary>
+                <p>Keine. SagWas speichert alle Aufnahmen lokal. Geteilte Inhalte gehen ausschließlich über deinen eigenen iCloud-Account. Es gibt kein Tracking, keine Werbung, keine Analytics.</p>
+            </details>
+        </section>
+
+        <section>
+            <h2>Kontakt &amp; Support</h2>
+            <div class="contact-box">
+                <p>
+                    Bei Fragen, Fehlern oder Feedback schreib eine E-Mail an<br>
+                    <a href="mailto:simonch@gmx.de?subject=SagWas%20Support">simonch@gmx.de</a>.
+                </p>
+                <p style="margin-top:10px;">
+                    Bitte gib iOS-Version, iPad-Modell und eine kurze Beschreibung des Problems an. Ich antworte
+                    in der Regel innerhalb von 48 Stunden.
+                </p>
+            </div>
+        </section>
+
+        <section>
             <h2>Datenschutz</h2>
-            <p>
-                SagWas nimmt den Schutz deiner Daten ernst:
-            </p>
             <ul>
                 <li>Alle Aufnahmen werden lokal auf dem Gerät gespeichert.</li>
                 <li>Geteilte Seiten werden verschlüsselt über Apple iCloud (CloudKit) übertragen.</li>
                 <li>Es werden keine personenbezogenen Daten an Dritte weitergegeben.</li>
                 <li>Die App enthält keine Werbung und kein Tracking.</li>
                 <li>Piktogramme werden über die ARASAAC-API geladen (nur Bildsymbole, keine Nutzerdaten).</li>
+                <li>Vollständige Datenschutzerklärung: <a href="https://simonchrz.github.io/sagwas/privacy.html">simonchrz.github.io/sagwas/privacy.html</a></li>
             </ul>
-        </div>
+        </section>
 
-        <footer>&copy; 2026 Simon Chrzanowski</footer>
-    </div>
+        <section>
+            <h2>English Support</h2>
+            <p>
+                SagWas is an AAC (Augmentative and Alternative Communication) app for iPad. It combines recordings,
+                pictograms, photos and text-to-speech into simple communication boards. For support, please contact
+                <a href="mailto:simonch@gmx.de?subject=SagWas%20Support">simonch@gmx.de</a> in English or German.
+                Please include your iOS version, iPad model, and a short description of the issue.
+            </p>
+            <h3>Quick tips</h3>
+            <ul>
+                <li><strong>Record:</strong> Hold the big speak button for 3 seconds.</li>
+                <li><strong>Share:</strong> Settings → Share to get a 6-digit Share-ID (requires iCloud).</li>
+                <li><strong>TTS voices:</strong> Download high-quality voices under iOS Settings → Accessibility → Spoken Content → Voices.</li>
+                <li><strong>Forgot PIN:</strong> Reinstalling the app resets the PIN but deletes local recordings.</li>
+            </ul>
+        </section>
+
+        <footer>
+            &copy; 2026 Simon Chrzanowski · SagWas · <a href="mailto:simonch@gmx.de">simonch@gmx.de</a>
+        </footer>
+    </main>
 </body>
 </html>
